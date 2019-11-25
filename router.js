@@ -12,10 +12,10 @@ api.get('/', async (req, res) => {
 api.post('/countries', Country.postCountries)
 api.get('/countries', Country.getCountries)
 
-api.get('marathons', Marathon.getMarathons);
-api.post('marathon', Marathon.postMarathon);
-api.get('marathon/:id', Marathon.getMarathon);
-api.put('marathon/:id', Marathon.putMarathon);
-api.delete('marathon/:id', Marathon.deleteMarathon);
+api.get('/marathons', Marathon.getMarathons);
+api.post('/marathon', Marathon.postMarathon);
+api.get('/marathon/:id', Marathon.getMarathon);
+api.put('/marathon/:id', Marathon.putMarathon);
+api.delete('/marathon/:id', Marathon.deleteMarathon);
 
 module.exports = api;

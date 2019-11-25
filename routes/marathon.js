@@ -27,7 +27,7 @@ const getMarathons = async (req, res) => {
 const postMarathon = async (req, res) => {
     let marathon = new Marathon(req.body);
     c(req.body);
-    await Marathon.save((err, data) => apiResponse(req, res, err, data));
+    await marathon.save((err, data) => apiResponse(req, res, err, data));
 }
 
 const getMarathon = async (req, res) => {
